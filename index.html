@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#4f6ef7" />
+  <title>AI 训练师题库</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- 顶部标题栏 -->
+    <header id="topbar">
+      <button id="backBtn" class="icon-btn" aria-label="返回">‹</button>
+      <div id="title" class="title">AI 训练师题库</div>
+      <button id="menuBtn" class="icon-btn" aria-label="菜单">☰</button>
+    </header>
+
+    <!-- 主内容区 -->
+    <main id="content"></main>
+
+    <!-- 底部导航 -->
+    <nav id="tabbar">
+      <div class="tab active" data-view="home">
+        <span class="tab-icon">📚</span><span class="tab-label">学习</span>
+      </div>
+      <div class="tab" data-view="wrong">
+        <span class="tab-icon">✗</span><span class="tab-label">错题本</span>
+        <span id="wrongBadge" class="badge hidden"></span>
+      </div>
+      <div class="tab" data-view="known">
+        <span class="tab-icon">✓</span><span class="tab-label">已会</span>
+      </div>
+      <div class="tab" data-view="stats">
+        <span class="tab-icon">📊</span><span class="tab-label">统计</span>
+      </div>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
